@@ -1,9 +1,9 @@
 #coding=utf-8
-n = int(input())
-r = int(input())
+n = int(input())  # 书的本数
+r = int(input())  # 人数
 b = []
 count = 0
-for i in range(r):
+for i in range(r):  # 每个人喜欢的书的列表
     b.append(input().split())
 for i in range(len(b)):
     for j in range(len(b[i])):
