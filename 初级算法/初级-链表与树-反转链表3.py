@@ -6,22 +6,10 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        # 迭代法
-        if not head:
-            return head
-        oldnode = head
-        newnode = None
-
-        while (oldnode):
-            oldnextnode = oldnode.next
-
-            oldnode.next = newnode
-
-            newnode = oldnode
-
-            oldnode = oldnextnode
-
-        return newnode
+        cur = head
+        prev = None
+        while cur:
+            next_node = cur.next
             
 
 
