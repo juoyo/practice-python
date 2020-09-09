@@ -1,6 +1,27 @@
 from typing import List
 
 
+
+ls1 = [[1, 2], [2]]
+t = []
+print(t.append(3))
+print(t[:].append(3))
+
+test = [['1', '2', '3'], ['3', '4', '5'], ['5', '6', '7']]
+test = [['.'] * 3] * 3
+def test_ls(test):
+    test[0][0] = '0'
+test_ls(test)
+print(test)
+
+ls = [1,4]
+ls2 = [2]
+ls2.append(ls[:])
+ls[0] = 3
+print(ls)
+print(ls2)
+
+
 class Solution:
     def calculate_area(self, heights, left, right):  # [left, right]为计算区间
         # print(left, right)
